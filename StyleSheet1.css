@@ -1,0 +1,215 @@
+﻿@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:600px) {
+    body {
+        font-size: 60%;
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        font-size: 50%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-s-grey: grey;
+    --main-s-white: #f5f6f7;
+    --main-s-black: #1b1b32;
+    --main-s-offwhite: #dfdfe2;
+    --main-s-lightgrey: lightgrey;
+    --main-s-teal: teal;
+}
+
+body {
+    background: var(--main-s-white);
+    color: var(--main-s-black);
+    margin: 0;
+    background-color: var(--main-s-white);
+    padding: 5px 5px 5px 5px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+section {
+    display: block;
+}
+
+/* ------NavBar ------*/
+.navbar {
+    width: 100%;
+    max-width: 100%;
+    height: 70px;
+    background-color: var(--main-s-teal);
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+.nav-link {
+    color: var(--main-s-offwhite);
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0.2rem;
+    /*padding: 0.1rem;*/
+    display: block;
+}
+
+.nav-link:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--main-s-white);
+}
+
+li a {
+    text-decoration: none;
+    color: var(--main-s-white);
+}
+
+/* ------Welcome Section ------*/
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    background-color: var(--main-s-grey);
+    background-image: linear-gradient(62deg, var(--main-s-lightgrey) 0%, var(--main-s-grey)100%);
+}
+
+p, h2, .projectName {
+    color: #474646;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: var(--main-s-black);
+    text-align: center;
+}
+
+p {
+    font-size: 31px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+/* ------ Projects Sections ------*/
+.projects {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-s-grey);
+    padding: 10rem 2rem;
+    background: var(--main-s-lightgrey);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projectName {
+    font-size: 16px;
+    border-bottom: 4px solid var(--main-s-offwhite);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: var(--main-s-teal);
+}
+
+  /* ------ Projects Sections ------*/
+.contact {
+    width: 100%;
+    height: 100vh;
+    padding: 10rem 2rem;
+    background-color: var(--main-s-grey);
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    align-items: center;
+    padding: 20px;
+}
+
+.fab fa-github {
+    background: var(--main-s-black);
+    color: white;
+}
+
+.fa-facebook-f {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.fa-linkedin-in {
+    background: #007bb5;
+    color: white;
+}
+
+.contact-email {
+    font-size: 300px;
+}
